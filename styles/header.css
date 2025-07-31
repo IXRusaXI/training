@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /*padding: 0 10px;*/
+    box-sizing: border-box;
+}
+
+.header__left-side,
+.header__right-side {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.header__left-side {
+    margin-right: 16px;
+}
+
+/*.header__right-side {*/
+/*    padding-right: 16px*/
+/*}*/
+
+.title {
+    /*white-space: nowrap;*/
+}

@@ -1,0 +1,12 @@
+.readMore {
+    font-size: 20px;
+}
+
+.readMore__arrows {
+    width: 10px;
+    padding: 12px;
+    vertical-align: middle;
+}
+.readMore__text {
+    font-weight: 600;
+}

@@ -1,0 +1,13 @@
+.decor {
+    position: relative;
+    left: -20px;
+    margin-top: -4px;
+    /*top: -4px;*/
+    padding-top: 5px;
+    height: 34px;
+    float: left;
+    width: 20px;
+
+    border-right: 4px solid rgb(129, 215, 193);
+    border-radius: 10%;
+}
