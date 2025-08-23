@@ -1,37 +1,60 @@
-h1 {
-    font-size: 28px;
-    font-family: 'TT Lakes', sans-serif;
-    font-weight: bold;
-    position: relative;
-    left: -12px;
-}
-
 body {
+    width: 280px;
+    height: 984px;
+    /*border: black solid 2px;*/
+    box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    /*min-height: 100vh;*/
+
     font-family: 'TT Lakes', sans-serif;
     margin: 0;
-    padding: 10px 0 0 0 ;
+    padding: 20px;
 }
 
-p {
-    padding-left: 12px;
-    padding-right: 12px;
-    font-size: 16px;
-    letter-spacing: 1px;
-    line-height: 18px;
+.menu {
+    margin-top: 40px;
+
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
 }
 
-input {
-    width: 16.5em;
-    border: 3px solid rgba(184, 255, 236, 0.8);
-    border-radius: 6px;
-    color: rgba(184, 255, 236, 0.1);
-    padding: 15px 16px;
+.menu_item {
+    /*width: 80%;*/
+    margin-left: -24px;
+    padding: 0;
+    float: left;
 }
 
-input::placeholder {
-    font-size: 16px;
-    text-align: center;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+.menu_item button {
+    display: block;
+    font-weight: 600;
+
+}
+
+.button {
+    margin: 5px 0;
+    border: none;
+    padding: 10px 0;
+
+    background-color: white;
+
+    font-weight: normal;
+    font-size: 18px;
+
+    text-align: left;
+    vertical-align: center;
+
+    font-family: 'TT Lakes', sans-serif;
+}
+.button:hover {
+    opacity: 0.5;
+    transition: 0.8s;
+}
+.menu_item:hover .decor {
+    opacity: 1;
+    transition: 0.8s;
 }

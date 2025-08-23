@@ -1,0 +1,33 @@
+.footer {
+    margin-top: auto;
+}
+
+.footer__icons {
+    display: flex;
+    gap: 16px;
+}
+
+
+.footer__mail {
+    margin: 10px 0;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.footer__phone {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.footer__language {
+    margin-top: 20px;
+
+    display: flex;
+    gap: 8px;
+}
+
+.footer__language button {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+}

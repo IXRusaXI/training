@@ -1,12 +1,14 @@
 .decor {
     position: relative;
-    left: -20px;
-    margin-top: -4px;
-    padding-top: 5px;
-    height: 34px;
+    left: -16px;
+    margin-top: 8px;
+    padding-top: 10px;
+    height: 24px;
     float: left;
     width: 20px;
 
     border-right: 4px solid rgb(129, 215, 193);
     border-radius: 10%;
+
+    opacity: 0;
 }
