@@ -5,96 +5,91 @@
     <link href="styles/footer.css" rel="stylesheet">
     <link href="styles/header.css" rel="stylesheet">
     <link href="styles/common.css" rel="stylesheet">
-    <link href="styles/decor.css" rel="stylesheet">
     <link href="styles/icons.css" rel="stylesheet">
+    <link href="styles/menu.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
 </head>
 <body>
+<aside>
+    <header class="header">
+        <div class="header__left-side">
+            <button class="icons close_icon"></button>
+            <a href="#" class="logo"></a>
+        </div>
 
-<header class="header">
-    <div class="header__left-side">
-        <img class="icons" src="images/close.svg" alt="Закрыть">
-        <img class="icons icons--logo" src="images/header-logo.svg" alt="Логотип">
-    </div>
-
-    <div class="header__right-side">
-        <img class="icons" src="images/icon-search.svg" alt="Поиск">
-    </div>
-</header>
+        <div class="header__right-side">
+            <button class="icons search_icon"></button>
+        </div>
+    </header>
 
 
-<div class="menu">
-    <div class="menu_item">
-        <div class="decor"></div>
-        <button class="button">
-            Ремонт техники
-        </button>
-    </div>
-    <div class="menu_item">
-        <div class="decor"></div>
-        <button class="button">
-            Услуги и сервисы
-        </button>
-    </div>
-    <div class="menu_item">
-        <div class="decor"></div>
-        <button class="button">
-            Корпоротивным клиентам
-        </button>
-    </div>
-    <div class="menu_item">
-        <div class="decor"></div>
-        <button class="button">
-            Продовцам техники
-        </button>
-    </div>
-    <div class="menu_item">
-        <div class="decor"></div>
-        <button class="button">
-            Партнерам
-        </button>
-    </div>
-    <div class="menu_item">
-        <div class="decor"></div>
-        <button class="button">
-            Производителям
-        </button>
-    </div>
-    <div class="menu_item">
-        <div class="decor"></div>
-        <button class="button">
-            Наши сервисные центры
-        </button>
-    </div>
-    <div class="menu_item">
-        <div class="decor"></div>
-        <button class="button">
-            Контакты
-        </button>
-    </div>
-</div>
+    <nav>
+        <ul>
+            <li>
+                <a class="menu_item">
+                    Ремонт техники
+                </a>
+            </li>
+            <li>
+                <a class="menu_item">
+                    Услуги и сервисы
+                </a>
+            </li>
+            <li>
+                <a class="menu_item">
+                    Корпоротивным клиентам
+                </a>
+            </li>
+            <li>
+                <a class="menu_item">
+                    Продовцам техники
+                </a>
+            </li>
+            <li>
+                <a class="menu_item">
+                    Партнерам
+                </a>
+            </li>
+            <li>
+                <a class="menu_item">
+                    Производителям
+                </a>
+            </li>
+            <li>
+                <a class="menu_item">
+                    Наши сервисные центры
+                </a>
+            </li>
+            <li>
+                <a class="menu_item">
+                    Контакты
+                </a>
+            </li>
+        </ul>
+    </nav>
 
-<footer class="footer">
-    <div class="footer__icons">
-        <img class="icons" src="images/call_icon.svg" alt="Закрыть">
-        <img class="icons" src="images/chat_icon.svg" alt="Закрыть">
-        <img class="icons" src="images/profile_icon.svg" alt="Закрыть">
-    </div>
+    <footer class="footer">
+        <div class="footer__icons">
+            <button class="icons call_icon"></button>
+            <button class="icons chat_icon"></button>
+            <button class="icons profile_icon"></button>
+        </div>
 
-    <div class="footer__mail">
-        <span class="mail">mail@cps.com</span>
-    </div>
+        <div class="footer__mail">
+            <a href="mail@cps.com" class="mail">mail@cps.com</a>
+        </div>
 
-    <div class="footer__phone">8 800 890 8900</div>
+        <a href="8 800 890 8900" class="footer__phone">8 800 890 8900</a>
 
-    <div class="footer__language">
-        <button class="button">ru</button>
-        <button class="button">en</button>
-        <button class="button">cn</button>
-    </div>
-</footer>
+        <div class="footer__language">
+            <a href="#" class="language">ru</a>
+            <a href="#" class="language">en</a>
+            <a href="#" class="language">cn</a>
+        </div>
+    </footer>
+</aside>
 </body>
 </html>
 

@@ -1,9 +1,30 @@
 .icons {
     height: 40px;
-    width: auto;
+    width: 40px;
 }
 
-.icons--logo {
+.logo {
     width: 97px;
     height: 51px;
+    background-image: url("../images/header-logo.svg");
+}
+
+.close_icon {
+    background-image: url("../images/close.svg");
+}
+
+.search_icon {
+    background-image: url("../images/icon-search.svg");
+}
+
+.call_icon {
+    background-image: url("../images/call_icon.svg");
+}
+
+.chat_icon {
+    background-image: url("../images/chat_icon.svg");
+}
+
+.profile_icon {
+    background-image: url("../images/profile_icon.svg");
 }

@@ -1,0 +1,9 @@
+.menu_item {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.menu_item:hover {
+    opacity: 0.5;
+    transition: opacity 0.8s ease-in-out;
+}

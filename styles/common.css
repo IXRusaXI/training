@@ -1,5 +1,10 @@
 body {
-    width: 280px;
+    margin: 0;
+    padding: 0;
+}
+
+aside {
+    width: 300px;
     min-height: 100vh;
     box-sizing: border-box;
 
@@ -9,32 +14,10 @@ body {
     flex-direction: column;
 
     font-family: 'TT Lakes', sans-serif;
-    margin: 0;
     padding: 20px;
 }
 
-.menu {
-    margin-top: 40px;
-
-    padding: 0;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.menu_item {
-    margin-left: -24px;
-    padding: 0;
-    float: left;
-}
-
-.menu_item button {
-    display: block;
-    font-weight: 600;
-
-}
-
-.button {
+button {
     margin: 5px 0;
     border: none;
     padding: 10px 0;
@@ -49,11 +32,46 @@ body {
 
     font-family: 'TT Lakes', sans-serif;
 }
-.button:hover {
-    opacity: 0.5;
-    transition: 0.8s;
+
+a {
+    color: black;
+    text-decoration: none;
 }
-.menu_item:hover .decor {
+
+nav {
+    margin-top: 30px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: block;
+    position: relative;
+    margin: 20px 0;
+    width: 100%;
+}
+
+li::before {
+    content: "";
+    display: block;
+
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    height: 32px;
+    width: 20px;
+
+    border-right: 4px solid rgb(129, 215, 193);
+    border-radius: 10%;
+
+    opacity: 0;
+}
+li:hover::before {
     opacity: 1;
-    transition: 0.8s;
+    transition: opacity 0.8s ease-in-out;
 }
