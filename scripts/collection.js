@@ -9,12 +9,12 @@ export let elementCollection = {
 
 export let logoImageCollection =
     [
-        '../images/samsung-logo.png',
-        '../images/acer-logo.png',
-        '../images/toshiba_logo.png',
-        '../images/logitech-logo.png',
-        '../images/razer-logo.png',
-        '../images/hp-logo.png',
-        '../images/sony-logo.png',
-        '../images/apple-logo.png',
+        'images/samsung-logo.png',
+        'images/acer-logo.png',
+        'images/toshiba_logo.png',
+        'images/logitech-logo.png',
+        'images/razer-logo.png',
+        'images/hp-logo.png',
+        'images/sony-logo.png',
+        'images/apple-logo.png',
     ]
