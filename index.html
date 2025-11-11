@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/font.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/card.css">
+    <link rel="stylesheet" href="styles/slider.css">
+    <link rel="stylesheet" href="styles/drop-down.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/media.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Drop Down</title>
+</head>
+<body>
+
+<div class="title">
+    <p>РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</p>
+</div>
+<div class="slider-row">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+
+<div class="drop-down-area">
+    <div class="first-link-list">
+    </div>
+    <div class="second-link-list hidden">
+    </div>
+
+    <button id="show" class="button drop-down--open">
+        <img src="images/readMoreArrows.svg" class="drop-down--arrow-up" alt="">
+        <span>Показать</span>
+    </button>
+    <button id="hide" class="button drop-down--close hidden">
+        <img src="images/readMoreArrows.svg" class="drop-down--arrow-down" alt="">
+        <span>Скрыть</span>
+    </button>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="module" src="scripts/main.js"></script>
+</body>
+</html>

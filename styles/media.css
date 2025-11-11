@@ -1,0 +1,52 @@
+@media (max-width: 767px) {
+    .slider-row {
+        display: block;
+    }
+
+    .first-link-list {
+        display: none;
+    }
+
+    .drop-down-area {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1119px) {
+    .slider-row {
+        display: none;
+    }
+
+    .card {
+        width: 224px;
+        height: 72px;
+    }
+    .first-link-list {
+        display: grid;
+    }
+
+    .first-link-list, .second-link-list {
+        grid-template-columns: auto auto auto;
+    }
+
+}
+
+@media  (min-width: 1120px)  {
+    .slider-row {
+        display: none;
+    }
+
+    .first-link-list {
+        display: grid;
+    }
+
+    .first-link-list, .second-link-list {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media  (min-width: 1336px)  {
+    .first-link-list, .second-link-list {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
