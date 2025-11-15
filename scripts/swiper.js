@@ -1,7 +1,7 @@
 export function initSwiper() {
     return new Swiper(".swiper", {
-        slidesPerView: 1,
-        spaceBetween: -65,
+        slidesPerView: (window.innerWidth + 10) / (240 + 10),
+        spaceBetween: 10,
         centeredSlides: true,
         pagination: {
             el: ".swiper-pagination",
