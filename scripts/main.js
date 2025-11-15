@@ -3,8 +3,7 @@ import {elementCollection as collection} from "./collection.js";
 import {logoImageCollection as logoImg} from "./collection.js";
 import {
     getElement,
-    showSecondBlock,
-    hideSecondBlock
+    showSecondBlock
 } from "./service.js";
 import {initSwiper} from "./swiper.js";
 
@@ -30,16 +29,19 @@ for (let i = 0; i < logoImg.length; i++) {
 }
 
 for (let i = logoImg.length - 1; i >= 0; i--) {
-    let cardTemplate = getElement(templates.brandCard);
+    let cardTemplate = getElement(templates.brandCard).firstElementChild;
     let cardImage = cardTemplate.querySelector('img');
 
+    cardTemplate.classList.add('hidden');
     cardImage.src = logoImg[i];
+    collection.hiddenLinksList[i] = cardTemplate;
 
-    collection.secondBlock.appendChild(cardTemplate);
+    collection.firstBlock.appendChild(cardTemplate);
 }
 
-collection.showButton.addEventListener('click', showSecondBlock);
-collection.hideButton.addEventListener('click', hideSecondBlock);
+collection.showButton.addEventListener('click', () => {
+    showSecondBlock(collection.hidden);
+});
 
 
 initSwiper();

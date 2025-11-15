@@ -1,0 +1,13 @@
+.title {
+    border-top: 1px solid rgba(217, 255, 245, 1);
+    background-image: linear-gradient(to right, rgba(248, 248, 248, 1) -10%, white);
+
+    color: rgba(126, 126, 130, 1);
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    line-height: 24px;
+    display: block;
+    padding: 20px;
+    background-color: #ffffff;
+}

@@ -2,13 +2,13 @@
     overflow: hidden;
     position: relative;
     display: block;
-    margin: 0 auto;
-    width: 320px;
+    width: auto;
+    justify-items: center;
 }
 
 .swiper {
     display: inline-block;
-    width: 320px;
+    width: 100vw;
     height: 74px;
     margin: 0 auto 0 auto;
 }

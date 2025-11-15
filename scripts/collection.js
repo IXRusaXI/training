@@ -1,10 +1,11 @@
 export let elementCollection = {
+    dropDown: document.querySelector('.drop-down-area'),
     sliderRow: document.querySelector('.slider-row'),
     slider: document.querySelector('.swiper-wrapper'),
-    firstBlock: document.querySelector('.first-link-list'),
-    secondBlock: document.querySelector('.second-link-list'),
-    showButton: document.querySelector('#show'),
-    hideButton: document.querySelector('#hide')
+    firstBlock: document.querySelector('.link-list'),
+    showButton: document.querySelector('.drop-down-area__toggle-button'),
+    hiddenLinksList: [],
+    hidden: true
 }
 
 export let logoImageCollection =

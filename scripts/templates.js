@@ -1,8 +1,7 @@
 export const templates = {
     brandCard: `
         <div class="card">
-            <img class="logo" alt="Лого компании">
-            <div class="circle"><div class="arrow"></div></div>
+            <img class="logo" src="" alt="Лого компании">
         </div>
     `,
 

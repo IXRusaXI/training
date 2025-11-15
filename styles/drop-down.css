@@ -1,4 +1,4 @@
-.first-link-list, .second-link-list {
+.link-list {
     display: grid;
     justify-content: space-between;
     row-gap: 10px;
@@ -6,42 +6,40 @@
     margin-bottom: 20px;
 }
 
-.drop-down--open,
-.drop-down--close {
-    width: 300px;
-    font-size: 30px;
+.drop-down-area__toggle-button {
     display: block;
-    margin: 0 auto 0 auto;
-    text-align: center;
-}
-.drop-down--open:hover,
-.drop-down--close:hover {
-    cursor: grab;
-    color: rgba(0, 0, 0, 0.54);
-}
-.drop-down--open:active,
-.drop-down--close:active {
-    cursor: grabbing;
-    color: rgba(0, 0, 0, 0.54);
+    position: relative;
+    width: auto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+
+    margin-left: 32px;
+    background-color: #f8f8f8;
 }
 
-.show-button-decor {
-    display: inline-block;
-    position: relative;
+.drop-down-area__toggle-button::before {
+    content: url('../images/readMoreArrows.svg');
+
+    position: absolute;
+    left: -20px;
     top: 50%;
     transform: translateY(-50%);
-    width: 10px;
-    height: 10px;
-    background-color: #fd3e79;
-    margin: auto 5px auto 5px;
-    box-shadow:
-            -2px -2px 0 0 blue inset,
-            2px 2px 0 0 blue;
+}
+
+.drop-down-area--open .drop-down-area__toggle-button::before {
+    content: url('../images/readMoreArrows.svg');
+
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform:  translateY(-54%) rotate(180deg) ;
 }
 
 .drop-down-area {
+
     position: relative;
-    margin: 0 20px 20px 20px;
+    padding: 20px;
 }
 
 .drop-down--arrow-down {

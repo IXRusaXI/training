@@ -7,21 +7,9 @@
     border-radius: 50%;
     border: solid 3px #fd3e79;
 }
-
-.arrow {
-    position: relative;
-    left: 50%;
-    box-shadow: 3px 3px 0 0 #fd3e79;
-    top: 50%;
-    transform: translateY(-50%) translateX(-100%) rotate(-45deg);
-    border-radius: 2px;
-    width: 10px;
-    height: 10px;
-}
-
 .logo {
-    max-height: 55px;
-    max-width: 130px;
+    max-height: 40px;
+    max-width: 120px;
     height: auto;
     width: auto;
 }
@@ -37,13 +25,18 @@
     align-items: center;
     overflow: hidden;
     background-color: white;
-    border: solid 1px gray;
-    border-radius: 10px;
+    border: solid 1px rgba(234, 234, 234, 1);
+    border-radius: 6px;
 
     transition: background-color 0.5s ease-in-out;
 }
+.card::after {
+    content: url('../images/nextArrow.svg');
+    right: 0;
+    width: 40px;
+    height: 40px;
+}
 .card:hover {
-    cursor: grab;
     background-color: rgba(126, 126, 126, 0.36);
 }
 
@@ -72,6 +65,5 @@
 }
 
 .card:active {
-    cursor: grabbing;
     animation: activateButton 0.5s alternate infinite;
 }
