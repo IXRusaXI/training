@@ -1,0 +1,133 @@
+aside {
+  width: 300px;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-direction: column;
+
+  font-family: 'TT Lakes', sans-serif;
+  padding: 20px;
+
+  .menu_item {
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .menu_item:hover {
+    opacity: 0.5;
+    transition: opacity 0.8s ease-in-out;
+  }
+
+  .icons {
+    background-color: white;
+    border: none;
+    height: 40px;
+    width: 40px;
+  }
+
+  .logo {
+    width: 97px;
+    height: 51px;
+    background-size: cover;
+    background-image: url("../img/logos/cps-logo.png");
+  }
+
+  .close_icon {
+    background-image: url("../img/icons/close-icon.svg");
+  }
+
+  .search_icon {
+    background-image: url("../img/icons/search-icon.svg");
+  }
+
+  .call_icon {
+    background-image: url("../img/icons/call-icon.svg");
+  }
+
+  .chat_icon {
+    background-image: url("../img/icons/chat-icon.svg");
+  }
+
+  .profile_icon {
+    background-image: url("../img/icons/profile-icon.svg");
+  }
+
+  .footer {
+    margin-top: auto;
+  }
+
+  .footer__icons {
+    display: flex;
+    gap: 16px;
+  }
+
+  .footer__mail {
+    margin: 10px 0;
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+  .footer__phone {
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+  .footer__language {
+    margin-top: 20px;
+
+    display: flex;
+    gap: 8px;
+  }
+
+  .language {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  nav {
+    margin-top: 30px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    display: block;
+    position: relative;
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  li::before {
+    content: "";
+    display: block;
+
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    height: 32px;
+    width: 20px;
+
+    border-right: 4px solid rgb(129, 215, 193);
+    border-radius: 10%;
+
+    opacity: 0;
+  }
+  li:hover::before {
+    opacity: 1;
+    transition: opacity 0.8s ease-in-out;
+  }
+}

@@ -1,0 +1,51 @@
+@import "header";
+@import "menu";
+@import "service";
+@import "media";
+
+$bgColor: #ffffff;
+$text: rgb(0, 0, 0);
+
+//@font-face {
+//  font-family: 'Comic';
+//  src: url('../fonts/comic.ttf') format('truetype');
+//  font-weight: normal;
+//  font-style: italic;
+//}
+
+@font-face {
+  font-family: 'TT Lakes'; /* Дайте шрифту любое имя */
+  src: url('../fonts/TTLakes-Regular.ttf') format('truetype');
+  font-weight: normal; /* Укажите вес шрифта */
+  font-style: normal; /* Укажите стиль шрифта (normal, italic) */
+  font-display: swap; /* Рекомендуется для лучшего UX: браузер сначала покажет запасной шрифт, затем загрузит ваш */
+}
+
+/* Если у вас есть жирное начертание, определите его отдельно */
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('../fonts/TTLakes-Bold.ttf') format('truetype');
+  font-weight: bold; /* Укажите вес как bold */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('../fonts/TTLakes-Medium.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "TT Lakes", sans-serif;
+  background-color: $bgColor;
+  color: $text;
+}
+
+.hidden {
+  display: none;
+}

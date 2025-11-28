@@ -1,0 +1,144 @@
+@media (max-width: 767px) {
+    header {
+        padding: 0 10px;
+    }
+
+  .title .decor {
+    position: relative;
+    left: -35px;
+    padding-top: 5px;
+    margin-top: 16px;
+  }
+
+  aside {
+    display: none;
+  }
+
+
+  .row {
+        width: 100%;
+    }
+
+    .content__item {
+        flex: 1 1 100%;
+    }
+
+    .icons--small-window {
+        display: flex;
+    }
+
+    .reviews,
+    .header__left-side .title--large-window,
+    .header__left-side .icons--medium-window,
+    .header__right-side .icons--medium-window,
+    .header__right-side .label--large-window,
+    .content__item .content_item--large-visible,
+    .content__item .content_item--medium-visible{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1120px) {
+    body {
+        padding: 10px;
+    }
+
+
+  aside {
+    display: none;
+  }
+
+    .title .decor {
+        position: relative;
+        left: -35px;
+      padding-top: 5px;
+      margin-top: 16px;
+    }
+
+    .content__item {
+        flex: 1 1 50%;
+    }
+
+    .reviews {
+        display: none;
+    }
+
+    .icons--small-window,
+    .content__item .content_item--large-visible{
+        display: none;
+    }
+
+    .header__left-side .icons--medium-window {
+        display: flex;
+    }
+
+    .header__right-side .icons--medium-window,
+    .content__item .content_item--medium-visible{
+        display: flex;
+    }
+
+
+    .header__right-side .label--large-window,
+    .header__left-side .title--large-window{
+        display: none;
+    }
+}
+@media (min-width: 1121px) {
+    body {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 300px 1fr;
+    }
+
+  aside {
+    grid-column: 1 / 2;
+    box-shadow: none;
+  }
+  .service {
+    grid-column: 2 / 2;
+  }
+
+    .content__item {
+        flex: 1 1 50%;
+    }
+
+    .reviews {
+        display: flex;
+        margin-left: 30px;
+        color: gray;
+    }
+
+    .icons--small-window {
+        display: none;
+    }
+
+    .header__left-side .icons--medium-window,
+    .content__item .content_item--medium-visible{
+        display: none;
+    }
+
+    .title,
+    .header__left-side .icons,
+    .header__right-side .icons--medium-window {
+        display: none;
+    }
+
+    .header__right-side .label--large-window,
+    .content__item .content_item--large-visible,
+    .header__left-side .title--large-window{
+        display: flex;
+    }
+
+  .title--large-window{
+    padding: 0;
+  }
+
+    .title .decor {
+        position: relative;
+        left: -52px;
+        padding-top: 5px;
+        margin-top: 16px;
+    }
+
+
+}
