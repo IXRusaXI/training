@@ -19,7 +19,10 @@ module.exports = {
 
   module: {
     rules: [
-      // Транспилируем js с babel
+      {
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+      },
       {
         test: /\.js$/,
         include: path.resolve(__dirname, 'src/js'),

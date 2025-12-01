@@ -1,0 +1,121 @@
+.devices-repair {
+  padding: 1rem;
+
+  .title-repair {
+    padding-left: 1rem;
+  }
+
+
+  .swiper-pagination {
+    position: relative;
+    margin-top: 10px;
+    display: block;
+  }
+
+  .drop-down-area__toggle-button {
+    display: none;
+    position: relative;
+    width: auto;
+
+    line-height: 24px;
+    margin-left: 32px;
+    margin-top: 1rem;
+
+    // Стили фона и сброс
+    background-color: #f8f8f8;
+    font: inherit;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    color: #1a1b22;
+  }
+
+  .drop-down-area__toggle-button::before {
+    content: url('../img/decor/drop-down.svg'); // Убедитесь, что путь к иконке правильный
+    position: absolute;
+    left: -25px;
+    top: 60%;
+    transform: translateY(-50%);
+  }
+
+  .drop-down-area--open .drop-down-area__toggle-button::before {
+    top: 40%;
+    transform: translateY(-54%) rotate(180deg);
+  }
+
+  .swiper {
+    display: block;
+  }
+  .link-list {
+    display: none;
+  }
+}
+
+.card--device {
+  width: 240px;
+  height: 160px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  padding: 16px;
+  box-sizing: border-box;
+
+  background-color: white;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+}
+
+.drop-down-area {
+  padding: 1rem;
+}
+
+.card--device .card__name {
+  font-weight: 500;
+  font-size: 16px;
+  color: #1a1b22;
+  flex-grow: 0;
+  margin: 0;
+}
+
+.card--device .arrow {
+  align-self: flex-end;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .devices-repair {
+    .swiper {
+      display: none;
+    }
+
+    .link-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .drop-down-area__toggle-button {
+      display: block;
+    }
+
+    .swiper-pagination {
+      display: none;
+    }
+  }
+}
+@media (min-width: 1120px) {
+  .devices-repair .link-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -10,7 +10,6 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-
 <aside>
   <header class="header">
     <div class="header__left-side">
@@ -133,8 +132,8 @@
 
 <span class="reviews">
         Отзывы
-    </span>
-
+</span>
+  <div class='service-main-content'>
     <div class="content">
 
 
@@ -162,29 +161,84 @@
       </div>
 
       <div class="content__item">
-        <img class="logo" src="./img/pictures/cps-logo-photo.png" alt="Фото логотипа компании">
+        <div class='image-container'>
+          <img class="logo" src="./img/pictures/cps-logo-photo.png" alt="Фото логотипа компании">
+        </div>
       </div>
     </div>
 
-  <div>
-    Ремонт техники различных брендов
+  <div class='repair-brands'>
+
+    <div class="title-repair">
+      <p>РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</p>
+    </div>
+    <section class="slider-row">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <div class="drop-down-area">
+      <section class="link-list">
+      </section>
+
+      <button id="show" class="drop-down-area__toggle-button">
+        <span>Показать все</span>
+      </button>
+    </div>
+
   </div>
 
-  <div>
-    Ремонт различных видов техники
-  </div>
-  <div>
+    <div class='devices-repair'>
+
+      <div class="title-repair">
+        <p>РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</p>
+      </div>
+      <div class='devices-repair'>
+        <section class="slider-row">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </section>
+      </div>
+
+      <div class="drop-down-area">
+        <section class="link-list">
+        </section>
+
+        <button id="show-devices" class="drop-down-area__toggle-button">
+          <span>Показать все</span>
+        </button>
+      </div>
+    </div>
+  <div >
     Цены на услуги
   </div>
-  <div>
-    Футтер
   </div>
+
+  <footer class="main-footer">
+    <div class="main-footer__container">
+
+      <div class="main-footer__column main-footer__copyright">
+        <p>&copy; 2019 CPS</p>
+        <p>Разработано командой Apesong</p>
+      </div>
+
+      <div class="main-footer__column main-footer__policy">
+        <p href="#">Политика конфиденциальности</p>
+      </div>
+
+      <div class="main-footer__column main-footer__disclaimer">
+        <p>Информация, размещенная на данной странице, не является публичной офертой</p>
+      </div>
+
+    </div>
+  </footer>
 </div>
-
-
-
-
-
 
     <div class='hidden'>
       Обратная связь
@@ -192,5 +246,6 @@
     <div class='hidden'>
       Заказать звонок
     </div>
+
   </body>
 </html>

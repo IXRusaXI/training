@@ -1,31 +1,26 @@
+@import "repair-brands";
+@import "devices-repair";
+@import "footer";
 @import "header";
 @import "menu";
 @import "service";
 @import "media";
 
-$bgColor: #ffffff;
+$bgColor: rgba(248, 248, 248, 1);
 $text: rgb(0, 0, 0);
 
-//@font-face {
-//  font-family: 'Comic';
-//  src: url('../fonts/comic.ttf') format('truetype');
-//  font-weight: normal;
-//  font-style: italic;
-//}
-
 @font-face {
-  font-family: 'TT Lakes'; /* Дайте шрифту любое имя */
+  font-family: 'TT Lakes';
   src: url('../fonts/TTLakes-Regular.ttf') format('truetype');
-  font-weight: normal; /* Укажите вес шрифта */
-  font-style: normal; /* Укажите стиль шрифта (normal, italic) */
-  font-display: swap; /* Рекомендуется для лучшего UX: браузер сначала покажет запасной шрифт, затем загрузит ваш */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-/* Если у вас есть жирное начертание, определите его отдельно */
 @font-face {
   font-family: 'TT Lakes';
   src: url('../fonts/TTLakes-Bold.ttf') format('truetype');
-  font-weight: bold; /* Укажите вес как bold */
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
@@ -44,8 +39,12 @@ body {
   font-family: "TT Lakes", sans-serif;
   background-color: $bgColor;
   color: $text;
+
+  min-height: 100vh;
 }
 
 .hidden {
   display: none;
 }
+
+

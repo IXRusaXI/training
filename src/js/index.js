@@ -1,3 +1,6 @@
 import '../scss/style.scss'
 
-console.log('Works!')
+import initBrandCards, { initDeviceCards } from './slider/main'
+
+initBrandCards()
+initDeviceCards()

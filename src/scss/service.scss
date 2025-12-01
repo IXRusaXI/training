@@ -1,6 +1,13 @@
 .service {
   background-color: rgba(248, 248, 248, 1);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 
+
+  .service-main-content {
+    flex-grow: 1;
+  }
   .title {
     //position: relative;
     padding: 1rem;
@@ -70,13 +77,28 @@
     font-weight: 600;
   }
   .content {
-    padding: 1rem;
+    min-height: 300px;
+
     display: flex;
     flex-wrap: wrap;
+
+    align-items: flex-start;
+
+    .content__item {
+      flex: 1 1 300px;
+      margin-bottom: 20px;
+      padding: 1rem;
+    }
+    .content__item:last-child {
+      padding: 0;
+    }
   }
 
-  .logo {
-    width: 100%;
+  .content__item .logo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
   }
 }
 

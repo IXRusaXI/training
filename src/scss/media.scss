@@ -84,19 +84,23 @@
     }
 }
 @media (min-width: 1121px) {
-    body {
-      padding: 20px;
-      display: grid;
-      grid-template-columns: 300px 1fr;
-    }
+  body {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+  }
 
   aside {
     grid-column: 1 / 2;
     box-shadow: none;
   }
+
   .service {
     grid-column: 2 / 2;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
   }
+
 
     .content__item {
         flex: 1 1 50%;
