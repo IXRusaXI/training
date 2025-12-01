@@ -8,7 +8,7 @@ export const templates = {
     deviceCard: `
           <div class="card card--device">
               <span class="card__name"></span>
-              <img class="arrow" src="./img/decor/move-on.svg" alt="Перейти">
+              <img class="arrow" src="../img/decor/move-on.svg" alt="Перейти">
           </div>
     `,
 

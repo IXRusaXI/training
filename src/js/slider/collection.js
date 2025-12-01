@@ -6,7 +6,7 @@ export let elementCollection = {
     showButton: document.querySelector('.drop-down-area__toggle-button'),
     hiddenLinksList: [],
     hidden: true,
-
+// ➡️ НОВЫЕ ЭЛЕМЕНТЫ ДЛЯ БЛОКА ТЕХНИКИ (Обновите селекторы!)
   deviceDropDown: document.querySelector('.devices-repair .drop-down-area'),
   deviceSlider: document.querySelector('.devices-repair .swiper-wrapper'),
   deviceFirstBlock: document.querySelector('.devices-repair .link-list'),
@@ -17,14 +17,14 @@ export let elementCollection = {
 
 export let logoImageCollection =
     [
-        './img/logos/samsung-logo.png',
-        './img/logos/acer-logo.png',
-        './img/logos/apple-logo.png',
-        './img/logos/bosch-logo.png',
-        './img/logos/hp-logo.png',
-        './img/logos/lenovo-logo.png',
-        './img/logos/sony-logo.png',
-        './img/logos/viewsonic-logo.png',
+        '../img/logos/samsung-logo.png',
+        '../img/logos/acer-logo.png',
+        '../img/logos/apple-logo.png',
+        '../img/logos/bosch-logo.png',
+        '../img/logos/hp-logo.png',
+        '../img/logos/lenovo-logo.png',
+        '../img/logos/sony-logo.png',
+        '../img/logos/viewsonic-logo.png',
     ]
 
 export let deviceTypeCollection = [

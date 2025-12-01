@@ -1,5 +1,6 @@
 @import "repair-brands";
 @import "devices-repair";
+@import "cost";
 @import "footer";
 @import "header";
 @import "menu";
@@ -39,7 +40,7 @@ body {
   font-family: "TT Lakes", sans-serif;
   background-color: $bgColor;
   color: $text;
-
+  //user-select: none;
   min-height: 100vh;
 }
 
@@ -47,4 +48,12 @@ body {
   display: none;
 }
 
+p {
+  margin: 0;
+}
+
+button {
+  border: none;
+  background-color: white;
+}
 

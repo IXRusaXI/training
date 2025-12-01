@@ -92,7 +92,10 @@
   aside {
     grid-column: 1 / 2;
     box-shadow: none;
+
+    position: fixed;
   }
+
 
   .service {
     grid-column: 2 / 2;
