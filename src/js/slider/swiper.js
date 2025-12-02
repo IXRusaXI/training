@@ -48,3 +48,22 @@ export function initDevicesSwiper() {
     },
   });
 }
+export function initServiceSwiper() {
+  if (window.innerWidth >= 768) {
+    return;
+  }
+
+  const selector = '.cost .swiper';
+  const paginationSelector = '.cost .swiper-pagination';
+
+  const slidesPerViewDevices = (window.innerWidth - 32) / (240 + 28); // Пример: видеть больше одной карточки
+
+  return new Swiper(selector, {
+    ...baseOptions,
+    slidesPerView: slidesPerViewDevices,
+    pagination: {
+      el: paginationSelector,
+      clickable: true,
+    },
+  });
+}

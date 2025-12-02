@@ -1,5 +1,6 @@
 .devices-repair {
   padding: 1rem;
+  position: relative;
 
   .title-repair {
     border-top: 1px solid rgba(217, 255, 245, 1);
@@ -94,6 +95,29 @@
   width: 40px;
   height: 40px;
   flex-shrink: 0;
+}
+
+.slider-row::after {
+  z-index: 100;
+  display: inline-block;
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: 16px;
+  width: 90px;
+  background-image: linear-gradient(to left, #f7f7f7 25%, rgba(0, 128, 0, 0) 70%);
+  height: 170px;
+}
+.slider-row::before {
+  z-index: 100;
+  display: inline-block;
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 16px;
+  width: 90px;
+  background-image: linear-gradient(to right, #f7f7f7 25%, rgba(0, 128, 0, 0) 70%);
+  height: 170px;
 }
 
 @media (min-width: 768px) {

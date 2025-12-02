@@ -14,6 +14,9 @@
     display: none;
   }
 
+  .cost__list{
+    display: none;
+  }
 
   .row {
         width: 100%;
@@ -42,7 +45,13 @@
     body {
         padding: 10px;
     }
+  .cost__list{
+    display: flex;
+  }
 
+  .cost .slider-row {
+    display: none;
+  }
 
   aside {
     display: none;
@@ -89,6 +98,10 @@
     grid-template-columns: 300px 1fr;
   }
 
+  .cost .slider-row {
+    display: none;
+  }
+
   aside {
     grid-column: 1 / 2;
     box-shadow: none;
@@ -96,6 +109,9 @@
     position: fixed;
   }
 
+  .cost__list{
+    display: flex;
+  }
 
   .service {
     grid-column: 2 / 2;

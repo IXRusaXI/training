@@ -1,0 +1,136 @@
+.call-back-wrapper {
+
+
+  position: fixed;
+  top: 0;
+  z-index: 101;
+  height: 100vh;
+  width: 100vw;
+
+  display: grid;
+  grid-template-columns: auto 440px;
+
+  input {
+    border: 1px solid rgba(234, 234, 234, 1);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 0.7rem;
+  }
+
+  input::placeholder {
+    font-family: "TT Lakes", sans-serif;
+    font-weight: 600;
+    color: #b4b5bc;
+    font-size: 16px;
+  }
+
+  .call-back-background {
+    grid-column: 1 / 2;
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+
+  .call-back-content {
+    box-sizing: border-box;
+    border-left: 1px solid rgb(215, 253, 244);
+
+    position: relative;
+    padding: 40px;
+    grid-column: 2 / 2;
+    background-color: white;
+
+    &__close-button {
+      position: absolute;
+      left: -70px;
+      top: 32px;
+
+      height: 40px;
+      width: 40px;
+
+      //background-color: #fd3e79;
+      background-color: rgba(234, 234, 234, 0);
+      background-image: url("../img/icons/close-icon.svg");
+    }
+
+    &__title {
+      position: relative;
+      margin-bottom: 1rem;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    &__title::before {
+      content: '';
+
+      position: absolute;
+      left: -42px;
+
+      height: 32px;
+      width: 3px;
+
+      border-radius: 3px;
+
+      background-color: #40f4d5;
+    }
+
+    &__input-wrapper {
+      display: flex;
+      flex-direction: column;
+
+      .message {
+        border: 1px solid rgba(234, 234, 234, 1);
+        border-radius: 8px;
+        height: 118px;
+        padding: 0.7rem;
+        resize: none;
+
+        margin-bottom: 1rem;
+      }
+
+      .message::placeholder {
+        font-family: "TT Lakes", sans-serif;
+        font-weight: 600;
+        position: absolute;
+        color: #b4b5bc;
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 13px;
+        //color: #9d9da1;
+        color: rgba(147, 147, 151, 1);
+        font-weight: 600;
+        margin-bottom: 1rem;
+        a {
+          color: #fd3e79;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &__send-button {
+      margin-left: auto;
+
+      display: flex;
+      padding: 1rem;
+      justify-content: space-between;
+      align-items: center;
+      width: 136px;
+      height: 32px;
+      background-color: #fd3e79;
+      border-radius: 3rem;
+      color: white;
+      font-family: "TT Lakes", sans-serif;
+      font-weight: bold;
+      font-size: 12px;
+
+      &__arrow {
+        width: 7px;
+        height: 10px;
+      }
+    }
+  }
+
+
+}

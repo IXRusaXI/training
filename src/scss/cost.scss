@@ -1,4 +1,79 @@
 .cost {
+  position: relative;
+
+  .slider-row::after {
+    z-index: 100;
+    display: inline-block;
+    content: '';
+    position: absolute;
+    right: 5px;
+    top: 70px;
+    width: 90px;
+    background-image: linear-gradient(to left, #f7f7f7 25%, rgba(0, 128, 0, 0) 70%);
+    height: 200px;
+  }
+  .slider-row::before {
+    z-index: 100;
+    display: inline-block;
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 70px;
+    width: 90px;
+    background-image: linear-gradient(to right, #f7f7f7 25%, rgba(0, 128, 0, 0) 70%);
+    height: 200px;
+  }
+
+  .swiper-pagination {
+    position: relative;
+    margin-top: 10px;
+    display: block;
+  }
+
+  .slider-row {
+    padding: 1rem;
+  }
+
+  .service_card {
+    width: 260px;
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    padding: 16px;
+    box-sizing: border-box;
+
+    background-color: white;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+
+    .title {
+      padding: 0;
+    }
+
+    .service-card-wrapper {
+      display: flex;
+      flex-direction: column;
+
+      .text {
+        color: #a1a1a5;
+      }
+    }
+
+    .time_place {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
 
   .cost__title {
     border-top: 1px solid rgba(217, 255, 245, 1);
@@ -9,7 +84,7 @@
   .cost__list {
 
     padding: 1rem 2rem;
-    display: flex;
+    //display: flex;
     flex-direction: column;
   }
 
@@ -40,7 +115,6 @@
     }
 
     .order-button {
-      text-transform: capitalize;
       display: flex;
       padding: 1rem;
       justify-content: space-between;
@@ -71,21 +145,40 @@
     }
   }
 
+  .order-button {
+    text-transform: capitalize;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+    height: 32px;
+    background-color: #fd3e79;
+    border-radius: 3rem;
+    color: white;
+    font-family: "TT Lakes", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+
+    .order-button__arrow {
+      width: 7px;
+      height: 10px;
+    }
+  }
+
   .cost__text {
     margin: 1rem 2rem;
 
     .nds {
-      //min-width: 70%;
-      //max-width: 421px;
-      width: 421px;
+      display: block;
 
       margin-bottom: 1rem;
     }
   }
 
   .cost__commercial-offer {
-    display: flex;
-    align-items: center;
+    //display: flex;
+    //align-items: center;
     font-weight: 600;
 
     .commercial-offer__arrow {
@@ -93,6 +186,33 @@
       height: auto;
 
       margin-left: 0.5rem;
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+  .cost__text {
+    margin: 1rem;
+
+    .nds {
+      display: block;
+      width: 100%;
+
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .cost__text {
+    margin: 1rem;
+
+    .nds {
+      display: block;
+      width: 421px;
+
+      margin-bottom: 1rem;
     }
   }
 }

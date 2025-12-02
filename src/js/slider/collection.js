@@ -1,4 +1,5 @@
 export let elementCollection = {
+    main: document.querySelector('body'),
     dropDown: document.querySelector('.drop-down-area'),
     sliderRow: document.querySelector('.slider-row'),
     slider: document.querySelector('.swiper-wrapper'),
@@ -12,7 +13,12 @@ export let elementCollection = {
   deviceFirstBlock: document.querySelector('.devices-repair .link-list'),
   deviceShowButton: document.querySelector('.devices-repair .drop-down-area__toggle-button'),
   deviceHiddenLinksList: [],
-  deviceHidden: true
+  deviceHidden: true,
+  serviceSlider: document.querySelector('.cost .swiper-wrapper'),
+
+  callBackShowButton: document.querySelector('.chat_icon'),
+  callBackCloseButton: document.querySelector('.call-back-content__close-button'),
+  callBackBlock: document.querySelector('.call-back-wrapper'),
 }
 
 export let logoImageCollection =
@@ -36,4 +42,11 @@ export let deviceTypeCollection = [
   { name: 'Ремонт принтеров', image: '../img/icons/printer-icon.svg' },
   { name: 'Ремонт проекторов', image: '../img/icons/projector-icon.svg' },
   { name: 'Ремонт серверов', image: '../img/icons/server-icon.svg' },
+];
+export let costCollection = [
+  { title: 'Диагностика', cost: 'Бесплатно', time: '30 мин'  },
+  { title: 'Замена дисплея', cost: '1000 &#8381;', time: '30-120 мин' },
+  { title: 'Замена полифонического динамика', cost: '1000 &#8381;', time: '30-120 мин'  },
+  { title: 'Тестирование с выдачей технического заключения', cost: '1000 &#8381;', time: '30-120 мин'  },
+  { title: 'Замена программного обеспечения', cost: '1000 &#8381;', time: '30-120 мин'  }
 ];

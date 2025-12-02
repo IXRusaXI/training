@@ -1,29 +1,6 @@
 .repair-brands {
   padding: 1rem;
 
-
-  .title-repair {
-    border-top: 1px solid rgba(217, 255, 245, 1);
-    background-image: linear-gradient(to right, rgba(248, 248, 248, 1), white);
-    padding: 1rem 2rem;
-    margin: 0 -1rem;
-  }
-
-  .slider-row {
-    margin-top: 20px;
-    overflow: hidden;
-    position: relative;
-    display: block;
-    width: auto;
-    justify-items: center;
-  }
-
-  .swiper {
-    display: inline-block;
-    width: 100vw;
-    height: 74px;
-    margin: 0 auto 0 auto;
-  }
   .slider-row::after {
     z-index: 100;
     display: inline-block;
@@ -46,6 +23,29 @@
     background-image: linear-gradient(to right, #f7f7f7 25%, rgba(0, 128, 0, 0) 70%);
     height: 76px;
   }
+  .title-repair {
+    border-top: 1px solid rgba(217, 255, 245, 1);
+    background-image: linear-gradient(to right, rgba(248, 248, 248, 1), white);
+    padding: 1rem 2rem;
+    margin: 0 -1rem;
+  }
+
+  .slider-row {
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    width: auto;
+    justify-items: center;
+  }
+
+  .swiper {
+    display: inline-block;
+    width: 100vw;
+    height: 74px;
+    margin: 0 auto 0 auto;
+  }
+
 
   .swiper-slide {
     text-align: center;

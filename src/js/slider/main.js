@@ -1,12 +1,14 @@
 import {templates} from "./templates.js";
-import {elementCollection as collection} from "./collection.js";
-import {logoImageCollection as logoImg, deviceTypeCollection as deviceImg} from "./collection.js";
+import { costCollection, elementCollection as collection } from './collection.js'
+import {logoImageCollection as logoImg,
+  deviceTypeCollection as deviceTypes,
+  costCollection as serviceTypes} from "./collection.js";
 import {
     getElement,
     showSecondBlock,
     showDevicesBlock
 } from "./service.js";
-import { initBrandsSwiper, initDevicesSwiper } from "./swiper.js";
+import { initBrandsSwiper, initDevicesSwiper, initServiceSwiper } from './swiper.js'
 
 export default function initBrandCards() {
   for (let i = 0; i < logoImg.length; i++) {
@@ -49,12 +51,12 @@ export default function initBrandCards() {
 }
 
 export function initDeviceCards() {
-  const totalCards = deviceImg.length;
+  const totalCards = deviceTypes.length;
   const cardsToHide = 4;
   const startHidingIndex = totalCards - cardsToHide;
 
   for (let i = 0; i < totalCards; i++) {
-    const data = deviceImg[i];
+    const data = deviceTypes[i];
 
     let swiperCardWrapper = getElement(templates.swiperSlide);
     let swiperCard = getElement(templates.deviceCard);
@@ -81,5 +83,26 @@ export function initDeviceCards() {
   });
 
   initDevicesSwiper();
+}
+
+export function initServiceCards() {
+  const totalCards = costCollection.length;
+
+  for (let i = 0; i < totalCards; i++) {
+    const data = serviceTypes[i];
+
+    let swiperCardWrapper = getElement(templates.swiperSlide);
+    let swiperCard = getElement(templates.costCard);
+    swiperCard.querySelector('.title').textContent = data.title;
+    swiperCard.querySelector('.cost').innerHTML = data.cost;
+    swiperCard.querySelector('.time').textContent = data.time;
+
+    let slide = swiperCardWrapper.querySelector('.swiper-slide');
+    slide.appendChild(swiperCard.firstElementChild);
+    collection.serviceSlider.appendChild(slide);
+
+  }
+
+  initServiceSwiper()
 }
 
