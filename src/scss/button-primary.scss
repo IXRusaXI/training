@@ -1,0 +1,27 @@
+.button-primary {
+  padding: 0 10px;
+  height: 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: white;
+  background-color: #fd3e79;
+  border-radius: 12px;
+
+  &__text {
+    font-size: 10px;
+    margin-right: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &--big {
+    border-radius: 16px;
+    height: 26px;
+    width: 110px;
+
+    padding: 0 16px;
+  }
+}

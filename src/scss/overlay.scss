@@ -1,0 +1,24 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9); // Или темный, если хочешь
+ // Чуть ниже меню
+  backdrop-filter: blur(2px);
+  transition: opacity 0.3s ease;
+
+  &--hidden {
+    display: none;
+    opacity: 0;
+  }
+
+  &--modal {
+    z-index: 60;
+  }
+
+  &--menu {
+    z-index: 40;
+  }
+}

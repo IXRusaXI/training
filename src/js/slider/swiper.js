@@ -9,19 +9,39 @@ const baseOptions = {
   modules: [Navigation, Pagination],
 };
 
-export function initBrandsSwiper() {
-  if (window.innerWidth >= 768) {
-    return;
+export function initMenu() {
+  const selector = '.swiper--menu';
+
+  let perView;
+  if (window.innerWidth >= 700) {
+    perView = 3;
+  } else if (window.innerWidth >= 424) {
+    perView = 1.5;
+  } else {
+    perView = 1.2;
   }
 
-  const selector = '.repair-brands .swiper';
-  const paginationSelector = '.repair-brands .swiper-pagination';
-
-  const slidesPerViewBrands = (window.innerWidth + 10) / (240 + 16);
 
   return new Swiper(selector, {
     ...baseOptions,
-    slidesPerView: slidesPerViewBrands,
+    centeredSlides: false,
+    slidesPerView: perView
+  });
+}
+
+export function initBrandsSwiper() {
+  const selector = '.swiper--brand';
+  const paginationSelector = '.swiper--brand .swiper-pagination';
+
+  let perView;
+  if (window.innerWidth >= 500) {
+    perView = 2;
+  } else {
+    perView = 1;
+  }
+  return new Swiper(selector, {
+    ...baseOptions,
+    slidesPerView: perView,
     pagination: {
       el: paginationSelector,
       clickable: true,
@@ -30,37 +50,38 @@ export function initBrandsSwiper() {
 }
 
 export function initDevicesSwiper() {
-  if (window.innerWidth >= 768) {
-    return;
+  const selector = '.swiper--device-type';
+  const paginationSelector = '.swiper--device-type .swiper-pagination';
+
+  let perView;
+  if (window.innerWidth >= 500) {
+    perView = 2;
+  } else {
+    perView = 1;
   }
-
-  const selector = '.devices-repair .swiper';
-  const paginationSelector = '.devices-repair .swiper-pagination';
-
-  const slidesPerViewDevices = (window.innerWidth - 32) / (240 + 28); // Пример: видеть больше одной карточки
-
   return new Swiper(selector, {
     ...baseOptions,
-    slidesPerView: slidesPerViewDevices,
+    slidesPerView: perView,
     pagination: {
       el: paginationSelector,
       clickable: true,
     },
   });
 }
-export function initServiceSwiper() {
-  if (window.innerWidth >= 768) {
-    return;
+export function initPriceSwiper() {
+  const selector = '.swiper--price';
+  const paginationSelector = '.swiper--price .swiper-pagination';
+
+  let perView;
+  if (window.innerWidth >= 500) {
+    perView = 2;
+  } else {
+    perView = 1;
   }
-
-  const selector = '.cost .swiper';
-  const paginationSelector = '.cost .swiper-pagination';
-
-  const slidesPerViewDevices = (window.innerWidth - 32) / (240 + 28); // Пример: видеть больше одной карточки
 
   return new Swiper(selector, {
     ...baseOptions,
-    slidesPerView: slidesPerViewDevices,
+    slidesPerView: perView,
     pagination: {
       el: paginationSelector,
       clickable: true,

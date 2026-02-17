@@ -1,0 +1,13 @@
+@import "mixins";
+
+.header-menu {
+  @include flex-row-space-between;
+  width: 100%;
+  padding: 10px 0;
+
+  &__left,
+  &__right {
+    @include flex-container;
+    gap: 12px;
+  }
+}

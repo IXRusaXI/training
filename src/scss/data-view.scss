@@ -1,0 +1,35 @@
+.data-view {
+  display: flex;
+  flex-direction: column;
+
+  &--brand {}
+  &--device-type {}
+  &--price {}
+
+  &__title {
+    padding: 20px 0;
+    border-top: 1px solid #d7fdf4;
+    background-image: linear-gradient(to right, #f6f6f7, white 60%);
+  }
+
+  &__container {
+    //display: block;
+    //flex-direction: column;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    box-sizing: border-box;
+  }
+
+  &__grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-row-gap: 16px;
+
+  }
+}

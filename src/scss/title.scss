@@ -1,0 +1,29 @@
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: aqua;
+    width: 4px;
+    height: 120%;
+
+    border-radius: 0 5px 5px 0;
+
+    transform: translateY(-55%);
+    top: 50%;
+    left: -20px;
+
+    opacity: 0.5;
+  }
+
+  &--modal {
+    font-size: 24px;
+
+    &::before {
+      left: -30px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.swiper-slide {
+  align-content: center;
+
+  &--price {
+    width: 100%;
+    display: flex !important;
+    //width: 260px !important; /* Фиксируем ширину намертво */
+    justify-content: center !important;
+  }
+
+  &--device-type {
+    width: 100%;
+    display: flex !important;
+    //width: 260px !important; /* Фиксируем ширину намертво */
+    justify-content: center !important;
+  }
+
+  &--brand {
+    width: 100%;
+    display: flex !important;
+    //width: 260px !important; /* Фиксируем ширину намертво */
+    justify-content: center !important;
+  }
+}

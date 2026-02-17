@@ -1,134 +1,153 @@
-aside {
-  background-color: white;
-  width: 300px;
-  min-height: 100vh;
-  box-sizing: border-box;
+.menu {
 
-  box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.2);
-
-  display: flex;
-  flex-direction: column;
-  font-family: 'TT Lakes', sans-serif;
-  padding: 20px;
+  display: none;
+  padding: 16px 20px;
 
 
-  .menu_item {
-    font-weight: 600;
-    font-size: 18px;
-  }
-
-  .menu_item:hover {
-    opacity: 0.5;
-    transition: opacity 0.8s ease-in-out;
-  }
-
-  .icons {
+  &--side {
     background-color: white;
-    border: none;
-    height: 40px;
-    width: 40px;
+
+
+    position: sticky;
+
+    top:0;
+    width: 320px;
+    box-sizing: border-box;
+    height: 100vh;
+    flex-direction: column;
+    @media (max-width: 320px) {
+      width: 100%;
+    }
+    @media (max-width: 1439px) {
+      box-shadow: rgba(0, 0, 0, 0.18) 10px 0 30px 10px ;
+    }
+
   }
 
-  .logo {
-    width: 97px;
-    height: 51px;
-    background-size: cover;
-    background-image: url("../img/logos/cps-logo.png");
+  &--open {
+    background-color: white;
+
+    position: sticky;
+    width: 320px;
+    top:0;
+
+    box-sizing: border-box;
+    height: 100vh;
+    flex-direction: column;
+    @media (max-width: 320px) {
+      width: 100%;
+    }
+
   }
 
-  .close_icon {
-    background-image: url("../img/icons/close-icon.svg");
-  }
-
-  .search_icon {
-    background-image: url("../img/icons/search-icon.svg");
-  }
-
-  .call_icon {
-    background-image: url("../img/icons/call-icon.svg");
-  }
-
-  .chat_icon {
-    background-image: url("../img/icons/chat-icon.svg");
-  }
-
-  .profile_icon {
-    background-image: url("../img/icons/profile-icon.svg");
-  }
-
-  .footer {
-    margin-top: auto;
-  }
-
-  .footer__icons {
-    display: flex;
-    gap: 16px;
-  }
-
-  .footer__mail {
-    margin: 10px 0;
-    font-size: 1em;
-    font-weight: 600;
-  }
-
-  .footer__phone {
-    font-weight: bold;
-    font-size: 1.5em;
-  }
-
-  .footer__language {
-    margin-top: 20px;
-
-    display: flex;
-    gap: 8px;
-  }
-
-  .language {
-    text-transform: uppercase;
-    font-size: 1em;
-    font-weight: 600;
-  }
-
-  a {
-    color: black;
-    text-decoration: none;
-  }
-
-  nav {
-    margin-top: 30px;
-  }
-
-  ul {
-    list-style: none;
+  &--row {
     padding: 0;
-  }
-
-  li {
-    display: block;
-    position: relative;
-    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
     width: 100%;
   }
 
-  li::before {
-    content: "";
-    display: block;
+  &--swiper {
+    margin: 0 -20px;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
 
-    position: absolute;
-    left: -40px;
-    top: 50%;
-    transform: translateY(-50%);
+    &::before {
+      position: absolute;
+      content: '';
+      left: -10px;
+      z-index: 10;
 
-    height: 32px;
-    width: 20px;
+      background-image: linear-gradient(to right, #f6f6f7 40%, rgba(246, 246, 247, 0) 80%);
 
-    border-right: 4px solid rgb(129, 215, 193);
-    border-radius: 10%;
+      width: 40px;
+      height: 40px;
+      box-sizing: border-box;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      right: -10px;
+      z-index: 10;
 
-    opacity: 0;
+      background-image: linear-gradient(to left, #f6f6f7 40%, rgba(246, 246, 247, 0) 80%);
+
+      width: 40px;
+      height: 40px;
+      box-sizing: border-box;
+    }
   }
-  li:hover::before {
-    opacity: 1;
-    transition: opacity 0.8s ease-in-out;
+
+  &__list {
+    margin-top: 0;
+  }
+
+  &__input {
+    border: 1px solid #b7fdeb;
+    border-radius: 6px;
+    height: 40px;
+    box-sizing: border-box;
+    width: 240px;
+
+    &::placeholder {
+      //color: rgba(0, 0, 0, 0.47);
+      text-align: center;
+
+      color: rgba(125, 125, 130, 0.88);
+
+      font-size: 16px;
+      font-family: 'TT Lakes', sans-serif;
+      font-weight: 600;
+    }
+  }
+
+  &__link {
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 12px 0;
+
+    transition-duration: 0.4s;
+
+    &:hover {
+      color: gray;
+
+      &::before {
+        content: '';
+        position: absolute;
+        background-color: aqua;
+        width: 4px;
+        height: 140%;
+
+        border-radius: 0 5px 5px 0;
+
+        transform: translateY(-60%);
+        top: 50%;
+        left: -20px;
+
+        opacity: 0.5;
+      }
+    }
+
+    &--row {
+      margin: 0;
+      padding: 0 4px;
+      color: gray;
+      white-space: nowrap;
+
+      &:hover {
+        color: black;
+
+        background-image: linear-gradient(to bottom, #f6f6f7, rgba(0, 0, 0, 0.18) 40%, rgba(0, 0, 0, 0.18) 60%, #f6f6f7);
+
+        &::before {
+          content: none;
+        }
+      }
+    }
   }
 }

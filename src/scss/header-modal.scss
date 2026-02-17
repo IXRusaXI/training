@@ -1,0 +1,15 @@
+@import "mixins";
+
+.header-modal {
+  width: 100%;
+  padding: 10px 0;
+
+  &__flex {
+    @include flex-row-space-between;
+  }
+
+  &__left,
+  &__right {
+    @include flex-container;
+  }
+}

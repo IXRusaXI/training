@@ -1,0 +1,45 @@
+.company-info {
+  padding: 20px 0;
+
+  position: relative;
+  display: grid;
+  grid-template-columns: auto;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 50% 50%;
+    //grid-gap: 20px;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    overflow: hidden;
+    max-height: 150px;
+    max-width: 100%;
+
+    font-size: 14px;
+
+    @media (min-width: 768px) {
+      padding: 10px 20px 0 0;
+      max-height: 350px;
+    }
+
+    &--small {
+      max-height: 50px;
+    }
+
+    &--middle {
+      max-height: 240px;
+    }
+
+    &--open {
+      max-height: none;
+    }
+  }
+
+  &__logo {
+    width: 100%;
+  }
+}

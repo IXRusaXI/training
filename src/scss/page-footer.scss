@@ -1,0 +1,40 @@
+.page-footer {
+  color: #9f9fa3;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 22px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid #d7fdf4;
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__item {
+
+
+    &--align-right {
+      text-align: right;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .page-footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &__item {
+      padding-top: 20px;
+
+      &--align-right {
+        text-align: center;
+      }
+    }
+  }
+}

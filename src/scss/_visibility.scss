@@ -1,0 +1,22 @@
+.on-mobile    { display: none; }
+.on-tablet   { display: none; }
+.on-desktop  { display: none; }
+
+.not-mobile  { display: flex; }
+.not-tablet { display: flex; }
+.not-desktop { display: flex; }
+
+@media (max-width: 767px) {
+  .on-mobile    { display: flex; }
+  .not-mobile  { display: none;   }
+}
+
+@media (min-width: 768px) and (max-width: 1365px) {
+  .on-tablet   { display: flex; }
+  .not-tablet { display: none;  }
+}
+
+@media (min-width: 1366px) {
+  .on-desktop  { display: flex; }
+  .not-desktop { display: none; }
+}

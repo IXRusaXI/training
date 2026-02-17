@@ -1,0 +1,38 @@
+@import "mixins";
+
+.page-title {
+  &__flex {
+    @include flex-row-space-between;
+  }
+
+  &__left,
+  &__right {
+    @include flex-container;
+    gap: 12px;
+  }
+
+  &__button {
+    display: none;
+  }
+
+  &__button-title {
+    display: none;
+
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 1366px) {
+  .page-title {
+    &__button {
+      @include flex-container;
+      gap: 8px;
+    }
+
+    &__button-title {
+      display: inline-block;
+    }
+  }
+}
